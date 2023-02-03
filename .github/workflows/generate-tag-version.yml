@@ -5,7 +5,7 @@ on:
       version:
         description: New version
         required: true
-        default: 'patch'
+        default: "patch"
         type: choice
         options:
           - patch
