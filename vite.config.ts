@@ -25,7 +25,7 @@ export default defineConfig((configEnv) => ({
 			entry: resolve("src", "component/index.ts"),
 			name: "ReactFetchHook",
 			formats: ["es", "umd"],
-			fileName: (format) => `react-hook-fetch.${format}.js`
+			fileName: (format) => `react-data-fetch-hook.${format}.js`
 		},
 		rollupOptions: {
 			// @ts-expect-error unable to find peerDependencies, but can find dependencies

@@ -1,5 +1,5 @@
-# react-hook-fetch
+# react-data-fetch-hook
 
-# react-hook-fetch
+# react-data-fetch-hook
 
-# react-hook-fetch
+# react-data-fetch-hook

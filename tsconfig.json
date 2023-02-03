@@ -19,7 +19,7 @@
 		"declarationMap": true,
 		"baseUrl": ".",
 		"paths": {
-			"react-hook-fetch": ["src/component/index.ts"]
+			"react-data-fetch-hook": ["src/component/index.ts"]
 		},
 		"typeRoots": ["node_modules/@types", "src/component/index.d.ts"]
 	},
