@@ -1,6 +1,5 @@
 {
 	"compilerOptions": {
-		
 		"target": "ESNext",
 		"useDefineForClassFields": true,
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
@@ -20,7 +19,7 @@
 		"declarationMap": true,
 		"baseUrl": ".",
 		"paths": {
-			"react-fetch-hook2": ["src/component/index.ts"]
+			"react-hook-fetch": ["src/component/index.ts"]
 		},
 		"typeRoots": ["node_modules/@types", "src/component/index.d.ts"]
 	},

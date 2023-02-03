@@ -1,5 +1,5 @@
 {
-	"name": "react-fetch-hook2",
+	"name": "react-hook-fetch",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -28,13 +28,13 @@
 	],
 	"exports": {
 		".": {
-			"import": "./dist/react-fetch-hook2.es.js",
-			"require": "./dist/react-fetch-hook2.umd.js"
+			"import": "./dist/react-hook-fetch.es.js",
+			"require": "./dist/react-hook-fetch.umd.js"
 		},
 		"./dist/style.css": "./dist/style.css"
 	},
-	"main": "./dist/react-fetch-hook2.umd.js",
-	"module": "./dist/react-fetch-hook2.es.js",
+	"main": "./dist/react-hook-fetch.umd.js",
+	"module": "./dist/react-hook-fetch.es.js",
 	"types": "./dist/index.d.ts",
 	"peerDependencies": {
 		"react": "18.2.0 || >=18.x",
@@ -42,14 +42,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jainChetan81/react-fetch-hook2.git"
+		"url": "https://github.com/jainChetan81/react-hook-fetch.git"
 	},
 	"keywords": [],
 	"author": "Chetan Jain",
 	"bugs": {
-		"url": "https://github.com/jainChetan81/react-fetch-hook2/issues"
+		"url": "https://github.com/jainChetan81/react-hook-fetch/issues"
 	},
-	"homepage": "https://github.com/jainChetan81/react-fetch-hook2#readme",
+	"homepage": "https://github.com/jainChetan81/react-hook-fetch#readme",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^18.11.18",
