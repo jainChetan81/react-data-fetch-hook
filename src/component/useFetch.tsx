@@ -25,13 +25,26 @@ export default function useFetch<TFetch_Type>(url: string, method: "GET" | "POST
 					method,
 					body
 				});
-				const newData = (await response.json()) as TFetch_Type;
-				if (!isCancelled && response.ok) {
+				if (!response.ok)
+					throw new Error(response.statusText, {
+						cause: response
+					});
+				if (!isCancelled) {
+					const newData = (await response.json()) as TFetch_Type;
 					setData(newData);
 					setError(null);
 					controllerRef.current = null;
 				}
 			} catch (e: unknown) {
+				if (isCancelled) return;
+				// @ts-expect-error - TS doesn't know about the cause property
+				switch (e.cause?.res?.status) {
+					case 401:
+						break;
+					default:
+						console.error(e);
+				}
+
 				setError(e);
 			}
 			setLoading(false);
